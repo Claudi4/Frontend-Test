@@ -1,9 +1,8 @@
-<h1>Rutas</h1>
-<ul>
-  <li><a routerLink="/ejercicios/ejercicio-one">Ejercicio01</a></li>
-  <li><a routerLink="/pages/ejercicios/ejercicio-three">Ejercicio02</a></li>
-  <li><a routerLink="/pages/ejercicios/ejercicio-one">Ejercicio03</a></li>
-</ul>
+<div class="cntHeader">
+  <button mat-raised-button color="primary" (click)="goToExercise(1)">Ejercicio 1</button>
+  <button mat-raised-button color="primary" (click)="goToExercise(2)">Ejercicio 2</button>
+  <button mat-raised-button color="primary" (click)="goToExercise(3)">Ejercicio 3</button>
+</div>
 
 <router-outlet></router-outlet>
 

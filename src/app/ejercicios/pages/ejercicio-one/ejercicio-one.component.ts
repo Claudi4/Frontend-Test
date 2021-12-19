@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ejercicio-one',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjercicioOneComponent implements OnInit {
 
-  constructor() { }
+  start = '';
+  end = '';
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
+
+  goToExampleTwo() {
+    this.router.navigate(["ejercicio-two"]);
+  }
+
+  calculatePrim() {
+    
+  }
+  
 
 }

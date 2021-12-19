@@ -4,8 +4,10 @@ import { EjercicioOneComponent } from './pages/ejercicio-one/ejercicio-one.compo
 import { EjercicioTwoComponent } from './pages/ejercicio-two/ejercicio-two.component';
 import { EjercicioThreeComponent } from './pages/ejercicio-three/ejercicio-three.component';
 import { EjerciciosRoutingModule } from './ejercicios-routing.module';
-
-
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,11 @@ import { EjerciciosRoutingModule } from './ejercicios-routing.module';
   ],
   imports: [
     CommonModule,
-    EjerciciosRoutingModule
+    EjerciciosRoutingModule,
+    MatInputModule,
+    MatIconModule,
+    FormsModule,
+    MatButtonModule
   ]
 })
 export class EjerciciosModule { }
