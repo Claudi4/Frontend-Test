@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 //import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { EjerciciosModule } from './ejercicios/ejercicios.module';
+import { exercisesModule } from './exercises/exercise.module';
 
 const routes: Routes = [
   {
-    path: "ejercicios",
-    loadChildren: () => import("./ejercicios/ejercicios.module").then(m => m.EjerciciosModule)
+    path: "exercises",
+    loadChildren: () => import("./exercises/exercise.module").then(m => m.exercisesModule)
   },
   {
     path: "**",
-    redirectTo:"ejercicios-one"
+    redirectTo:"exercise-one"
   }
 ]
 
@@ -24,7 +24,7 @@ const routes: Routes = [
   ],
   exports: [
     RouterModule,
-    EjerciciosModule
+    exercisesModule
   ]
 })
 export class AppRoutingModule { }
