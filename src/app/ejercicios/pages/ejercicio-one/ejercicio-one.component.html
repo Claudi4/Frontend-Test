@@ -4,8 +4,8 @@
     </div>
     <div style="padding: 2rem 6rem;">
         <h2>Ingrese el rango para ver los números primos: </h2>
-        <div>
-            <div>
+        <div style="display: flex;">
+            <div style="width: 50%;">
                 <h3>Start: </h3>
                 <mat-form-field class="example-form-field" appearance="fill">
                     <mat-label>Start</mat-label>
@@ -23,8 +23,10 @@
                     </button>
                 </mat-form-field>
             </div>
-            <div>
-                
+            <div style="  display: block; width: 350px; height: 200px; overflow-y: scroll; scroll-behavior: smooth;">
+                <div *ngFor="let prim of prims" style="padding: 0.5rem; display: flex; justify-content: center; border-radius: 5px; background-color: aliceblue;">
+                    <label>{{prim}}</label>
+                </div>
             </div>
         </div>
         <div style="display: flex; justify-content: center; margin-top: 2rem;">

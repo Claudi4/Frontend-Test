@@ -5,19 +5,28 @@ import { EjercicioTwoComponent } from './pages/ejercicio-two/ejercicio-two.compo
 import { EjercicioThreeComponent } from './pages/ejercicio-three/ejercicio-three.component';
 import { EjerciciosRoutingModule } from './ejercicios-routing.module';
 import {MatInputModule} from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { SearchComponent } from '../search/search.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchPipe } from '../pipes/search.pipe';
+
+
 @NgModule({
   declarations: [
     EjercicioOneComponent,
     EjercicioTwoComponent,
     EjercicioThreeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchComponent,
+    SearchPipe, 
   ],
   imports: [
     CommonModule,
@@ -29,7 +38,12 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  
   ]
 })
 export class EjerciciosModule { }

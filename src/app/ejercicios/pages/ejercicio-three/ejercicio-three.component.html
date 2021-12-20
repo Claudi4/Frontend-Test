@@ -1,1 +1,10 @@
-<app-navbar></app-navbar>
+<!--<app-navbar></app-navbar>-->
+<app-search (search)="handleSearch($event)"></app-search>
+<ul>
+    <li *ngFor= "let usuario of usuarios ">{{usuario.name}}</li>
+</ul>
+<mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of " [value]="option">
+    {{option}}
+    </mat-option>
+</mat-autocomplete>

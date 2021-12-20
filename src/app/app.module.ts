@@ -7,10 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 //import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
+//import { SearchPipe } from './pipes/search.pipe';
+//import { SearchComponent } from './search/search.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    //SearchPipe,
+    //SearchComponent,
     
   ],
   imports: [
