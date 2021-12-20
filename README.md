@@ -5,10 +5,11 @@ Marvel api es Web responsive que permite visualizar data de los personajes de ma
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
-## Development server
+## Ejecutar el proyecto 
 
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para ejecutar el Proyecto de debe de clonar el repositorio.
+Luego ejeculart un npm install en una consola .
+Luego un npm start .
 
 ## Dentro de las tecnologias usadas estan :
 
