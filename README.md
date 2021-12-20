@@ -11,10 +11,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Dentro de las tecnologias usadas estan :
-Angular.js
-Javascript
-Typescript
-Angular Material io
+
+Angular.js/
+/Javascript
+/Typescript
+/Angular Material io
 ## Preview
 
 

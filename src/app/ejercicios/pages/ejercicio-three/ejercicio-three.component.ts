@@ -9,16 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class EjercicioThreeComponent implements OnInit {
   handleSearch(value:string){
     console.log(value);
-    
+    this.filtroValor = value;
   }
+  filtroValor = '';
+  usuarios: any;
+
   constructor(
     private _http: HttpClient
   ) { }
 
   ngOnInit(): void {
     this._http.get("https://jsonplaceholder.typicode.com/users").subscribe(
-    (users: any) => this.usuarios = users)
+    users => this.usuarios = users)
   }
-  usuarios:any[] = []
-
 }
